@@ -1,15 +1,15 @@
 # site properties and page defaults
 title: Heidar-Zadeh Group
-subtitle: 
-description: An engaging 1-3 sentence description of your lab.
+subtitle: Queen's University
+description: Our research focuses on developing new mathematical tools, numerical algorithms, and computer software to qualitatively and quantitatively predict the outcome of chemical phenomena using strategies from quantum chemistry and machine learning.
 header: images/background.jpg
 footer: images/background.jpg
 
 # site social media and other links
 links:
-  email: contact@qtchem.com
-  orcid: 0000-0001-8713-9213
-  google-scholar: ETJoidYAAAAJ
+  email: farnaz.heidarzadeh@queensu.ca
+  orcid: 0000-0002-2069-050X
+  google-scholar: JlIWcccAAAAJ&hl
   github: qtchem
   twitter: qtchem
   youtube: qtchem
