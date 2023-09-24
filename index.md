@@ -3,7 +3,7 @@
 
 # Heidar-Zadeh Group Website
 
-An engaging 1-3 sentence description of your lab.
+Our research focuses on developing new mathematical tools, numerical algorithms, and computer software to qualitatively and quantitatively predict the outcome of chemical phenomena using strategies from quantum chemistry and machine learning.
 
 {% include section.html %}
 
