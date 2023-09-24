@@ -1,7 +1,7 @@
 ---
 name: Sydney McLennan
-image: images/photo.jpg
 role: alum
+description: Undergraduate Student
 links:
   linkedin: sydney-mclennan
 ---
