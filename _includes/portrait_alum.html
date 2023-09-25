@@ -13,7 +13,16 @@
     data-style="{{ include.style }}"
     aria-label="{{ member.name | default: "member link" }}"
   >
-
+    {% if member.role != alum %}
+    <img
+      src="{{ member.image | relative_url }}"
+      class="portrait-image"
+      alt="member portrait"
+      loading="lazy"
+      {% include fallback.html %}
+    >
+    {% endif %}
+    
     {% if member.name or member.role or member.description %}
       <span class="portrait-text">
         {% if member.name %}
