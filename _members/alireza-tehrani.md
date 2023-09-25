@@ -1,6 +1,6 @@
 ---
 name: Alireza Tehrani
-image: images/photo.jpg
+image: images/ali_headshot.jpeg
 aliases:
  - Ali Tehrani
 role: phd
