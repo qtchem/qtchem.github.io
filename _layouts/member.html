@@ -4,7 +4,7 @@ layout: default
 
 {% capture floatcontent %}
 
-{% include portrait.html lookup=page.slug %}
+{% include portrait.html lookup=page.slug filters="role: ^(?!alum$)" %}
 
 <div>
   {% for link in page.links %}
