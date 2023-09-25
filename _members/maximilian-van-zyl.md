@@ -1,6 +1,6 @@
 ---
 name: Maximilian van Zyl
-image: images/photo.jpg
+image: images/max_headshot.jpeg
 role: masters
 aliases:
   - Max van Zyl
