@@ -35,11 +35,7 @@
           <span class="portrait-role">
             {% assign type = site.data.types[member.role] %}
             {% include icon.html icon=type.icon %}
-            {% if member.links.linkedin %}
-            <a href="{{member.links.linkedin}}"><span>{{ member.description | default: type.description }}</span>
-            {% else %}
             <span>{{ member.description | default: type.description }}</span>
-            {% endif %}
           </span>
         {% endif %}
       </span>
