@@ -6,7 +6,7 @@
 
 <div class="portrait-wrapper">
   <a
-    {% if page.slug != member.slug and member.links.linkedin %}
+    {% if member.links.linkedin %}
       href="{{ member.links.linkedin }}"
     {% endif %}
     class="portrait"
