@@ -6,15 +6,8 @@
 
 <div class="portrait-wrapper">
   
-  <div>
-    {% for link in member.links %}
-      {% assign key = link[0] %}
-      {% assign value = link[1] %}
-      {% include button.html type=key text="" link=value style="bare" %}
-    {% endfor %}
-  </div>
-  
   <a
+    href="{{ member.links }}"
     class="portrait"
     data-style="{{ include.style }}"
     aria-label="{{ member.name | default: "member link" }}"
