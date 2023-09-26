@@ -36,6 +36,16 @@
             <span>{{ member.description | default: type.description }}</span>
           </span>
         {% endif %}
+        
+        {% if member.links %}
+          <div>
+            {% for link in member.links %}
+              {% assign key = link[0] %}
+              {% assign value = link[1] %}
+              {% include button.html type=key link=value style="bare" %}<br>
+            {% endfor %}
+          </div>
+        {% endif %}
       </span>
     {% endif %}
   </a>
