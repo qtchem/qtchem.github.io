@@ -36,12 +36,10 @@
             <span>{{ member.description | default: type.description }}</span>
           </span>
         {% endif %}
-        
-        {% for link in member.links %}
-          {% assign key = link[0] %}
-          {% assign value = link[1] %}
-          {% include button.html type=key link=value style="bare" %}<br>
-        {% endfor %}
+
+        {% if member.links.linkedin %}
+          {% include button.html type="linkedin" link=member.links.linkedin style="bare" %}<br>
+        {% endif %}
       </span>
     {% endif %}
   </a>
