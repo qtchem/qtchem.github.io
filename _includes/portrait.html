@@ -33,12 +33,12 @@
           <span class="portrait-role">
             {% assign type = site.data.types[member.role] %}
             {% include icon.html icon=type.icon %}
-            {% include button.html type="linkedin" link="farnaz-heidar-zadeh-248bb1126" style="bare" %}<br>
             <span>{{ member.description | default: type.description }}</span>
           </span>
         {% endif %}
         
       </span>
     {% endif %}
+    {% include button.html type="linkedin" link="farnaz-heidar-zadeh-248bb1126" style="bare" %}<br>
   </a>
 </div>
