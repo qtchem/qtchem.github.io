@@ -4,7 +4,7 @@ layout: default
 
 {% capture floatcontent %}
 
-{% include portrait_alum.html lookup=page.slug %}
+{% include portrait_alum.html %}
 
 {% endcapture %}
 
@@ -32,9 +32,6 @@ layout: default
     {% include button.html type=key link=value style="bare" %}<br>
   {% endfor %}
   </div>
-  <a href="{{ search | relative_url }}">
-    Search for {{ page.name | default: page.title }}'s papers on the Research page
-  </a>
 </p>
 
 {% capture search -%}
