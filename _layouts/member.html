@@ -2,13 +2,15 @@
 layout: default
 ---
 
-{% capture floatcontent %}
-
 <p class="center">
-{% include portrait_alum.html lookup=page.slug %}
+  <div>
+    {% capture floatcontent %}
+    
+    {% include portrait_alum.html lookup=page.slug %}
+    
+    {% endcapture %}
+  </div>
 </p>
-
-{% endcapture %}
 
 {% include float.html content=floatcontent %}
 
