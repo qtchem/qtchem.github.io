@@ -29,9 +29,6 @@ layout: default
 {%- endcapture %}
 
 <p class="center">
-  {% capture floatcontent %}
-
-  {% include portrait.html lookup=page.slug %}
   
   <div>
   {% for link in page.links %}
@@ -41,7 +38,6 @@ layout: default
   {% endfor %}
   </div>
 
-  {% endcapture %}
 </p>
 
 {% capture search -%}
