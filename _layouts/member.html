@@ -2,15 +2,19 @@
 layout: default
 ---
 
-<p class="center">
-  <div>
-    {% capture floatcontent %}
-    
-    {% include portrait_alum.html lookup=page.slug %}
-    
-    {% endcapture %}
-  </div>
-</p>
+{% capture floatcontent %}
+
+{% include portrait.html lookup=page.slug %}
+
+<div>
+  {% for link in page.links %}
+    {% assign key = link[0] %}
+    {% assign value = link[1] %}
+    {% include button.html type=key link=value style="bare" %}<br>
+  {% endfor %}
+</div>
+
+{% endcapture %}
 
 {% include float.html content=floatcontent %}
 
@@ -29,15 +33,9 @@ layout: default
 {%- endcapture %}
 
 <p class="center">
-  
-  <div>
-  {% for link in page.links %}
-    {% assign key = link[0] %}
-    {% assign value = link[1] %}
-    {% include button.html type=key link=value style="bare" %}<br>
-  {% endfor %}
-  </div>
-
+  <a href="{{ search | relative_url }}">
+    Search for {{ page.name | default: page.title }}'s papers on the Research page
+  </a>
 </p>
 
 {% capture search -%}
