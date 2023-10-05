@@ -18,13 +18,13 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 {% include list.html data="members" component="portrait" filters="role: masters" %}
 {% include list.html data="members" component="portrait" filters="role: postdoc" %}
 
+{% include section.html %}
+
 # {% include icon.html icon="fa-solid fa-users" %}Former Members
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
 nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-{% include section.html %}
 
 {% include list_alum.html data="members" component="portrait_alum" filters="role: alum" %}
 
