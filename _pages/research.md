@@ -7,18 +7,23 @@ nav: true
 nav_order: 2
 ---
 
-## Research Areas
+## Research Overview
 
-Our group focuses on cutting-edge research in computational chemistry and materials science. We develop and apply theoretical and computational methods to understand complex chemical systems and materials.
+Our research focuses on developing new mathematical tools, numerical algorithms, and computer software to qualitatively and quantitatively predict the outcome of chemical phenomena using strategies from quantum chemistry and machine learning.
 
-### Current Research Topics
+## Current Research Directions
 
-- Quantum chemistry methods
-- Electronic structure theory
-- Materials design and discovery
-- Computational catalysis
-- Machine learning in chemistry
+### 1. Machine Learning for Molecular Design
 
-### Research Philosophy
+We adapt state-of-the-art machine-learning algorithms to develop rapid, accurate, and efficient techniques for:
+- Screening large molecular databases
+- Studying molecular dynamics simulations of chemical processes
+- Computationally designing molecules with desirable properties
 
-We believe in combining rigorous theoretical foundations with practical applications to solve real-world problems in chemistry and materials science.
+### 2. Quantum Chemical Concepts & ChemTools Development
+
+We develop rigorous mathematical definitions of empirical chemical concepts within the framework of quantum chemistry. Our group is the lead developer of the free and open-source **[ChemTools](https://chemtools.org/)** software package—a collection of tools for interpreting the numerical output of quantum chemistry calculations to gain chemical insight.
+
+## Research Impact
+
+Our work bridges the gap between quantum mechanical calculations and chemical understanding, making computational chemistry more accessible and interpretable for the broader scientific community. Through ChemTools and our machine learning approaches, we enable researchers to extract meaningful chemical insights from complex quantum mechanical data.

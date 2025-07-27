@@ -2,27 +2,27 @@
 layout: page
 permalink: /contact/
 title: Contact
-description: Get in touch with our research group.
+description: ""
 nav: true
 nav_order: 7
 ---
 
-## Contact Information
+## Dr. Farnaz Heidar-Zadeh
+**Assistant Professor**
+**Department of Chemistry, Queen's University**
 
-### Dr. Farnaz Heidar-Zadeh
-**Principal Investigator**
-
-**Email:** [email@university.edu](mailto:email@university.edu)  
-**Office:** Room XXX, Department Building  
-**Phone:** +1 (XXX) XXX-XXXX  
+**Email:** [farnaz.heidarzadeh@queensu.ca](mailto:farnaz.heidarzadeh@queensu.ca) <br>
+**Office:** CHE304, Chernoff Hall <br>
+**Lab:** CHE315, Chernoff Hall <br>
+**Phone:** 613-533-6000 ext. 74673 (Lab) <br>
+**General Dept. Phone:** 613-533-2616 <br>
 
 ### Mailing Address
 
-Heidar-Zadeh Group  
-Department of Chemistry  
-Queen's University  
-Kingston, ON, Canada  
-K7L 3N6
+Heidar-Zadeh Group <br>
+Department of Chemistry <br>
+90 Bader Lane, Chernoff Hall <br>
+Queen's University, Kingston, ON K7L 3N6, Canada <br>
 
 ## Prospective Students
 
