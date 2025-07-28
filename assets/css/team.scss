@@ -19,7 +19,9 @@
   border-radius: 10px;
   background: var(--global-bg-color);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .team-member:hover {
@@ -152,12 +154,12 @@
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
+
   .team-photo {
     width: 120px;
     height: 120px;
   }
-  
+
   .pi-member .team-photo {
     width: 150px;
     height: 150px;

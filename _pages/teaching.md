@@ -12,10 +12,12 @@ nav_order: 4
 Dr. Heidar-Zadeh teaches courses in theoretical and computational chemistry at both undergraduate and graduate levels at Queen's University.
 
 ### Undergraduate Courses
+
 - **Physical Chemistry** - Quantum mechanics and molecular structure
 - **Computational Chemistry** - Introduction to computational methods in chemistry
 
 ### Graduate Courses
+
 - **Advanced Quantum Chemistry** - Theoretical foundations and applications
 - **Computational Methods in Chemistry** - Advanced computational techniques and software development
 
@@ -26,6 +28,7 @@ Our teaching approach emphasizes the connection between theoretical concepts and
 ## Student Research Supervision
 
 Dr. Heidar-Zadeh supervises graduate students and undergraduate researchers in theoretical and computational chemistry projects, with emphasis on:
+
 - Quantum chemistry method development
 - Machine learning applications in chemistry
 - Software development for chemical applications
@@ -34,6 +37,7 @@ Dr. Heidar-Zadeh supervises graduate students and undergraduate researchers in t
 ## Educational Resources
 
 We contribute to the educational community through:
+
 - Development of the open-source **ChemTools** software for educational use
 - Integration of computational tools in chemistry curriculum
 - Training workshops on computational chemistry methods
