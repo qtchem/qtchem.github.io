@@ -68,40 +68,43 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      # 1. Get your code
+      # 1. Checkout
       - name: Checkout 🛎️
         uses: actions/checkout@v4
 
-      # 2. Pull in al‑folio extras and copy them to assets/
-      - name: Fetch al-folio extras 📦
+      # 2. Fetch and copy al‑folio extras
+      - name: Fetch al‑folio extras 📦
         run: |
           git clone --depth=1 https://github.com/alshedivat/al-folio.git vendor/al-folio
           mkdir -p assets/fonts assets/css
           cp vendor/al-folio/assets/fonts/academicons.* assets/fonts/
           cp vendor/al-folio/assets/css/academicons.min.css assets/css/
 
-      # 3. Ensure Jekyll will include these new files
-      - name: Ensure fonts & CSS are included in Jekyll ⚙️
-        uses: fjogeleit/yaml-update-action@main
-        with:
-          commitChange: false
-          valueFile: "_config.yml"
-          propertyPath: "include"
-          value: '["assets/fonts","assets/css"]'
+      # # 3. Ensure fonts & CSS are included as a proper YAML array
+      # - name: Ensure Jekyll include is a YAML array
+      #   run: |
+      #     if grep -q '^include:' _config.yml; then
+      #       echo "Updating existing include section"
+      #       sed -i '/^include:/a\  - assets/fonts\n  - assets/css' _config.yml
+      #     else
+      #       echo -e "\ninclude:\n  - assets/fonts\n  - assets/css" >> _config.yml
+      #     fi
 
-      # 4. Standard setup
+      # 4. Setup Ruby
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.3.6"
           bundler-cache: true
 
+      # 5. Setup Python
       - name: Setup Python 🐍
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: "pip"
 
+      # 6. Update giscus config
       - name: Update _config.yml (giscus) ⚙️
         uses: fjogeleit/yaml-update-action@main
         with:
@@ -110,7 +113,7 @@ jobs:
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
 
-      # 5. Build the site
+      # 7. Build the site
       - name: Install and Build 🔧
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick
@@ -118,22 +121,22 @@ jobs:
           export JEKYLL_ENV=production
           bundle exec jekyll build
 
-      # 6. Create .nojekyll so Pages won’t re-process/ignore files
-      - name: Add .nojekyll to site root 🚫
+      # 8. Add .nojekyll so GitHub Pages doesn’t re‑process
+      - name: Add .nojekyll 🚫
         run: touch _site/.nojekyll
 
-      # 7. Purge unused CSS
+      # 9. Purge unused CSS
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
 
-      # 8. Deploy to gh-pages
+      # 10. Deploy to gh‑pages
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages        # ← target branch
-          folder: _site           # ← built site directory
-          clean: true             # ← remove old files first
-          single-commit: true     # ← squash into one commit per deploy
+          branch: gh-pages
+          folder: _site
+          clean: true
+          single-commit: true
