@@ -5,6 +5,7 @@ This system automatically updates the publications page with Prof. Farnaz Heidar
 ## How It Works
 
 The system combines the best of both approaches:
+
 - **Individual Publication Display**: Each publication is shown separately with full details (like the original BibTeX system)
 - **Automatic Updates**: Publications are automatically fetched from Google Scholar and converted to BibTeX format
 - **No Manual Maintenance**: The system updates itself whenever the website is rebuilt
@@ -12,14 +13,16 @@ The system combines the best of both approaches:
 ## Files Created
 
 ### 1. `_scripts/update_publications.py`
+
 - **Purpose**: Python script that fetches publications from Google Scholar
-- **What it does**: 
+- **What it does**:
   - Connects to Prof. Heidar-Zadeh's Google Scholar profile (`JlIWcccAAAAJ`)
   - Downloads all publication data
   - Converts to BibTeX format compatible with jekyll-scholar
   - Updates `_bibliography/papers.bib`
 
 ### 2. `.github/workflows/update-publications.yml`
+
 - **Purpose**: GitHub Actions workflow for automation
 - **Triggers**:
   - Every time you push to the main branch
@@ -31,23 +34,27 @@ The system combines the best of both approaches:
   - Rebuilds and deploys the website
 
 ### 3. `update_publications.sh`
+
 - **Purpose**: Manual update script for immediate use
 - **Usage**: Run `./update_publications.sh` from the website root directory
 
 ## Usage Options
 
 ### Option 1: Automatic (Recommended)
+
 1. **Push to GitHub**: The system automatically updates publications on every push
 2. **Weekly Updates**: New publications are automatically detected weekly
 3. **Zero Maintenance**: Just publish papers to Google Scholar as usual
 
 ### Option 2: Manual Updates
+
 ```bash
 # From the website root directory
 ./update_publications.sh
 ```
 
 ### Option 3: Direct Python Script
+
 ```bash
 # Install dependencies
 pip install scholarly requests beautifulsoup4
@@ -87,16 +94,19 @@ The system is pre-configured with Prof. Heidar-Zadeh's details:
 ## Troubleshooting
 
 ### If Publications Don't Update
+
 1. Check that the Google Scholar ID is correct in the script
 2. Verify internet connection
 3. Google Scholar may have rate limiting - wait and try again
 
 ### If Website Build Fails
+
 1. Check the GitHub Actions logs
 2. Verify that all dependencies are properly installed
 3. Ensure the papers.bib file is valid BibTeX format
 
 ### Manual Verification
+
 ```bash
 # Test the website locally
 bundle exec jekyll serve
@@ -107,13 +117,13 @@ bundle exec jekyll build --verbose
 
 ## Benefits Over Manual System
 
-| Manual BibTeX | Automated System |
-|---------------|------------------|
+| Manual BibTeX                   | Automated System                    |
+| ------------------------------- | ----------------------------------- |
 | ❌ Must manually add each paper | ✅ Automatically detects new papers |
-| ❌ Risk of formatting errors | ✅ Consistent formatting |
-| ❌ Time-consuming maintenance | ✅ Zero maintenance required |
-| ❌ May miss new publications | ✅ Weekly automatic checks |
-| ❌ Citation counts get outdated | ✅ Always current citation metrics |
+| ❌ Risk of formatting errors    | ✅ Consistent formatting            |
+| ❌ Time-consuming maintenance   | ✅ Zero maintenance required        |
+| ❌ May miss new publications    | ✅ Weekly automatic checks          |
+| ❌ Citation counts get outdated | ✅ Always current citation metrics  |
 
 ## Security & Privacy
 
@@ -125,6 +135,7 @@ bundle exec jekyll build --verbose
 ## Support
 
 If you encounter issues:
+
 1. Check the GitHub Actions logs in your repository
 2. Verify the Google Scholar profile is public and accessible
 3. Ensure all required Python packages are installed

@@ -16,6 +16,7 @@ Our research focuses on developing new mathematical tools, numerical algorithms,
 ### 1. Machine Learning for Molecular Design
 
 We adapt state-of-the-art machine-learning algorithms to develop rapid, accurate, and efficient techniques for:
+
 - Screening large molecular databases
 - Studying molecular dynamics simulations of chemical processes
 - Computationally designing molecules with desirable properties

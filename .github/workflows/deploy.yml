@@ -74,12 +74,12 @@ jobs:
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: ">= 3.3.6"
+          ruby-version: "3.3.6"
           bundler-cache: true
       - name: Setup Python 🐍
         uses: actions/setup-python@v5
         with:
-          python-version: ">= 3.12"
+          python-version: "3.12"
           cache: "pip" # caching pip dependencies
       - name: Update _config.yml ⚙️
         uses: fjogeleit/yaml-update-action@main

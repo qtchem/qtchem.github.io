@@ -8,6 +8,7 @@ nav_order: 7
 ---
 
 ## Dr. Farnaz Heidar-Zadeh
+
 **Assistant Professor**
 **Department of Chemistry, Queen's University**
 

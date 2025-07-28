@@ -85,6 +85,7 @@ nav_order: 3
 
 {% assign undergrad_count = site.data.team_members.undergraduate_students | size %}
 {% if undergrad_count > 0 %}
+
 <div class="team-section">
   <h2>Undergraduate Students</h2>
   <div class="team-grid">
