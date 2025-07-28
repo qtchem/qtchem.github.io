@@ -57,6 +57,11 @@ nav_order: 3
       <div class="team-department">{{ member.department }}</div>
       <div class="team-bio">{{ member.bio }}</div>
       <div class="team-links">
+        {% if member.website and member.website != "" %}
+        <a href="{{ member.website }}" class="team-link website" target="_blank" title="Website">
+          <i class="fas fa-globe"></i>
+        </a>
+        {% endif %}
         {% if member.linkedin and member.linkedin != "" %}
         <a href="{{ member.linkedin }}" class="team-link linkedin" target="_blank" title="LinkedIn">
           <i class="fab fa-linkedin"></i>
@@ -65,6 +70,11 @@ nav_order: 3
         {% if member.github and member.github != "" %}
         <a href="{{ member.github }}" class="team-link github" target="_blank" title="GitHub">
           <i class="fab fa-github"></i>
+        </a>
+        {% endif %}
+        {% if member.email and member.email != "" %}
+        <a href="mailto:{{ member.email }}" class="team-link email" title="Email">
+          <i class="fas fa-envelope"></i>
         </a>
         {% endif %}
       </div>
@@ -84,6 +94,11 @@ nav_order: 3
       <div class="team-department">{{ member.department }}</div>
       <div class="team-bio">{{ member.bio }}</div>
       <div class="team-links">
+        {% if member.website and member.website != "" %}
+        <a href="{{ member.website }}" class="team-link website" target="_blank" title="Website">
+          <i class="fas fa-globe"></i>
+        </a>
+        {% endif %}
         {% if member.linkedin and member.linkedin != "" %}
         <a href="{{ member.linkedin }}" class="team-link linkedin" target="_blank" title="LinkedIn">
           <i class="fab fa-linkedin"></i>
@@ -92,6 +107,11 @@ nav_order: 3
         {% if member.github and member.github != "" %}
         <a href="{{ member.github }}" class="team-link github" target="_blank" title="GitHub">
           <i class="fab fa-github"></i>
+        </a>
+        {% endif %}
+        {% if member.email and member.email != "" %}
+        <a href="mailto:{{ member.email }}" class="team-link email" title="Email">
+          <i class="fas fa-envelope"></i>
         </a>
         {% endif %}
       </div>

@@ -18,16 +18,20 @@ graduate_students:
     department: "Department of Chemistry"
     image: "1.jpg"
     bio: "Research focus on quantum chemistry and machine learning applications."
-    linkedin: ""
-    github: ""
+    linkedin: "https://www.linkedin.com/in/farnaz-heidar-zadeh-248bb1126/"
+    github: "https://github.com/FarnazH"
+    website: "https://www.chem.queensu.ca/heidar-zadeh-farnaz"
+    email: "farnaz.heidarzadeh@queensu.ca"
 
   - name: "Graduate Student 2"
     title: "MSc Student"
     department: "Department of Chemistry"
     image: "2.jpg"
     bio: "Working on computational chemistry method development."
-    linkedin: ""
-    github: ""
+    linkedin: "https://www.linkedin.com/in/farnaz-heidar-zadeh-248bb1126/"
+    github: "https://github.com/FarnazH"
+    website: "https://www.chem.queensu.ca/heidar-zadeh-farnaz"
+    email: "farnaz.heidarzadeh@queensu.ca"
 
 undergraduate_students:
   - name: "Undergraduate Student 1"
@@ -35,8 +39,10 @@ undergraduate_students:
     department: "Department of Chemistry"
     image: "3.jpg"
     bio: "Contributing to software development for chemical applications."
-    linkedin: ""
-    github: ""
+    linkedin: "https://www.linkedin.com/in/farnaz-heidar-zadeh-248bb1126/"
+    github: "https://github.com/FarnazH"
+    website: "https://www.chem.queensu.ca/heidar-zadeh-farnaz"
+    email: "farnaz.heidarzadeh@queensu.ca"
 
 alumni:
   - name: "Former Student 1"
