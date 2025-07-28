@@ -1,0 +1,254 @@
+---
+---
+@comment{
+  =============================================================================
+  COMPREHENSIVE BIBTEX TEMPLATE FOR AL-FOLIO THEME
+  =============================================================================
+
+  This file shows all possible BibTeX entry types and fields supported by
+  the al-folio theme. Use this as a reference when adding your publications.
+
+  Entry Types Available:
+  - @article (journal articles)
+  - @book (books)
+  - @inproceedings (conference papers)
+  - @phdthesis (PhD dissertations)
+  - @mastersthesis (Master's theses)
+  - @techreport (technical reports)
+  - @misc (miscellaneous)
+
+  =============================================================================
+}
+
+@comment{Define journal abbreviations using @string}
+@string{aps = {American Physical Society}}
+@string{nature = {Nature Publishing Group}}
+@string{science = {American Association for the Advancement of Science}}
+
+@comment{
+  =============================================================================
+  JOURNAL ARTICLE - Complete Example with ALL Possible Fields
+  =============================================================================
+}
+@article{example_article_complete,
+  bibtex_show={true},
+  selected={true},
+
+  title={Complete Example Article Title with {Special} Characters},
+  author={Last1, First1 and Last2, First2 and Last3*, First3†},
+  journal={Journal of Computational Chemistry},
+  volume={45},
+  number={12},
+  pages={1234--1250},
+  year={2024},
+  month={June},
+  publisher={Wiley},
+
+  doi={10.1002/jcc.12345},
+  url={https://example.com/paper},
+  html={https://onlinelibrary.wiley.com/doi/10.1002/jcc.12345},
+  pdf={example_paper.pdf},
+
+  abstract={This is a comprehensive abstract describing the research methodology, key findings, and implications. It can be quite long and include technical details about the computational methods used.},
+
+  preview={paper_preview.png},
+
+  abbr={J. Comp. Chem.},
+
+  altmetric={123456},
+  dimensions={true},
+  google_scholar_id={abc123def456},
+  inspirehep_id={1234567},
+
+  award={This paper received the **Best Paper Award** at the 2024 Conference on Computational Chemistry},
+  award_name={Best Paper Award},
+
+  video={https://www.youtube-nocookie.com/embed/VIDEO_ID},
+  code={https://github.com/username/repo},
+  website={https://project-website.com},
+  slides={presentation_slides.pdf},
+  poster={conference_poster.pdf},
+
+  annotation={* Corresponding author<br>† Equal contribution},
+  additional_info={Additional information can be [found here](https://example.com) with **markdown** formatting.},
+
+  location={Virtual Conference},
+
+  numpages={17}
+}
+
+@comment{
+  =============================================================================
+  BOOK - Complete Example
+  =============================================================================
+}
+@book{example_book_complete,
+  bibtex_show={true},
+  selected={false},
+
+  title={Computational Chemistry: Methods and Applications},
+  author={Author, First and Coauthor, Second},
+  editor={Editor, Chief},
+
+  year={2023},
+  publisher={Academic Press},
+  address={New York, NY},
+  edition={2nd},
+
+  isbn={978-0-123456-78-9},
+  doi={10.1016/book.12345},
+  url={https://publisher.com/book},
+  html={https://publisher.com/book-page},
+  pdf={book_chapter.pdf},
+
+  preview={book_cover.jpg},
+  abbr={Academic Press},
+
+  abstract={This comprehensive book covers modern computational chemistry methods...},
+
+  altmetric={789},
+  dimensions={true},
+  google_scholar_id={book123id456}
+}
+
+@comment{
+  =============================================================================
+  CONFERENCE PAPER - Complete Example
+  =============================================================================
+}
+@inproceedings{example_conference_complete,
+  bibtex_show={true},
+  selected={true},
+
+  title={Machine Learning Approaches to Quantum Chemistry},
+  author={Researcher, Lead and Collaborator, Junior},
+
+  booktitle={Proceedings of the International Conference on Computational Science},
+  series={ICCS 2024},
+
+  year={2024},
+  month={July},
+  pages={45--58},
+
+  publisher={Springer},
+  address={Berlin, Germany},
+  location={Prague, Czech Republic},
+
+  doi={10.1007/conference.12345},
+  url={https://conference-site.com},
+  html={https://proceedings.com/paper},
+  pdf={conference_paper.pdf},
+
+  preview={conference_preview.png},
+  abbr={ICCS},
+
+  abstract={This paper presents novel machine learning techniques for quantum chemistry calculations...},
+
+  slides={conference_slides.pdf},
+  poster={conference_poster.pdf},
+  video={https://www.youtube-nocookie.com/embed/CONF_VIDEO_ID},
+
+  award={Received **Best Student Paper Award**},
+  award_name={Best Student Paper},
+
+  altmetric={456},
+  dimensions={true}
+}
+
+@comment{
+  =============================================================================
+  PhD THESIS - Complete Example
+  =============================================================================
+}
+@phdthesis{example_phd_thesis,
+  bibtex_show={true},
+
+  title={Advanced Computational Methods for Molecular Property Prediction},
+  author={Student, Graduate},
+
+  year={2023},
+  month={December},
+
+  school={Queen's University},
+  address={Kingston, ON, Canada},
+
+  url={https://qspace.library.queensu.ca/handle/thesis123},
+  pdf={phd_thesis.pdf},
+
+  preview={thesis_preview.png},
+  abbr={Queen's},
+
+  abstract={This thesis develops new computational approaches for predicting molecular properties using machine learning and quantum chemistry methods...}
+}
+
+@comment{
+  =============================================================================
+  MISCELLANEOUS - Preprints, Software, etc.
+  =============================================================================
+}
+@misc{example_preprint,
+  bibtex_show={true},
+
+  title={ChemTools: A Python Package for Chemical Insight from Quantum Chemistry},
+  author={Developer, Software and Team, Research},
+
+  year={2024},
+  month={January},
+
+  howpublished={arXiv preprint},
+  note={arXiv:2401.12345},
+
+  url={https://arxiv.org/abs/2401.12345},
+  html={https://chemtools.org},
+  pdf={chemtools_paper.pdf},
+
+  preview={chemtools_logo.png},
+  abbr={arXiv},
+
+  abstract={ChemTools is a free and open-source Python package for interpreting quantum chemistry calculations...},
+
+  code={https://github.com/theochem/chemtools},
+  website={https://chemtools.org},
+
+  altmetric={234},
+  dimensions={true}
+}
+
+@comment{
+  =============================================================================
+  FIELD DESCRIPTIONS
+  =============================================================================
+
+  DISPLAY CONTROL:
+  - bibtex_show={true/false}     : Show/hide BibTeX button
+  - selected={true/false}        : Mark as selected (appears on main page)
+  - preview={filename}           : Preview image (in assets/img/publication_preview/)
+  - abbr={text}                  : Journal/venue abbreviation
+
+  LINKS AND FILES:
+  - html={url}                   : Link to publisher page
+  - pdf={filename}               : PDF file (in assets/pdf/)
+  - url={url}                    : Generic URL
+  - code={url}                   : Link to code repository
+  - website={url}                : Link to project website
+  - slides={filename}            : Slides PDF (in assets/pdf/)
+  - poster={filename}            : Poster PDF (in assets/pdf/)
+  - video={url}                  : Embedded video URL
+
+  METRICS:
+  - altmetric={number}           : Altmetric score
+  - dimensions={true/false}      : Show Dimensions badge
+  - google_scholar_id={id}       : Google Scholar citation ID
+  - inspirehep_id={id}          : InspireHEP ID (physics papers)
+
+  AWARDS AND ANNOTATIONS:
+  - award={text}                 : Award description (supports markdown)
+  - award_name={text}            : Award name
+  - annotation={text}            : Footnote annotations (supports HTML)
+  - additional_info={text}       : Additional information (supports markdown)
+
+  STANDARD BIBTEX FIELDS:
+  All standard BibTeX fields are supported (title, author, journal, year, etc.)
+
+  =============================================================================
+}

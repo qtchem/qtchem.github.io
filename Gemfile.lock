@@ -270,7 +270,6 @@ GEM
     uglifier (4.2.1)
       execjs (>= 0.3.0, < 3)
     unicode-display_width (2.6.0)
-    unicode_utils (1.4.0)
     uri (1.0.3)
     webrick (1.9.1)
 
@@ -292,29 +291,26 @@ DEPENDENCIES
   css_parser
   feedjira
   httparty
-  jekyll (>= 4.4)
+  jekyll
   jekyll-archives-v2
   jekyll-email-protect
-  jekyll-feed (>= 0.17)
+  jekyll-feed
   jekyll-get-json
   jekyll-imagemagick
   jekyll-jupyter-notebook
   jekyll-link-attributes
   jekyll-minifier
-  jekyll-paginate-v2 (>= 3.0)
+  jekyll-paginate-v2
   jekyll-regex-replace
   jekyll-scholar
-  jekyll-sitemap (>= 1.4)
+  jekyll-sitemap
   jekyll-tabs
   jekyll-terser!
   jekyll-toc
   jekyll-twitter-plugin
-  jemoji (>= 0.13)
+  jemoji
   observer
   ostruct
-  terser
-  unicode_utils
-  webrick (>= 1.8)
 
 RUBY VERSION
    ruby 3.4.5p51

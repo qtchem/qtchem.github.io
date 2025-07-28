@@ -1,0 +1,47 @@
+# Team Members Data
+# Add team members here with their information
+
+principal_investigator:
+  - name: "Dr. Farnaz Heidar-Zadeh"
+    title: "Assistant Professor"
+    department: "Department of Chemistry, Queen's University"
+    image: "prof_pic.jpg"
+    bio: "Dr. Heidar-Zadeh leads our theoretical and computational chemistry research group. She is a recipient of the prestigious 2021 Polanyi Prize in Chemistry from the Council of Ontario Universities."
+    linkedin: "https://www.linkedin.com/in/farnaz-heidar-zadeh"
+    github: "https://github.com/FanwangM"
+    website: "https://www.chem.queensu.ca/people/faculty/heidar-zadeh-farnaz"
+    email: "farnaz.heidar.zadeh@queensu.ca"
+
+graduate_students:
+  - name: "Graduate Student 1"
+    title: "PhD Student"
+    department: "Department of Chemistry"
+    image: "1.jpg"
+    bio: "Research focus on quantum chemistry and machine learning applications."
+    linkedin: ""
+    github: ""
+    
+  - name: "Graduate Student 2"
+    title: "MSc Student"
+    department: "Department of Chemistry"
+    image: "2.jpg"
+    bio: "Working on computational chemistry method development."
+    linkedin: ""
+    github: ""
+
+undergraduate_students:
+  - name: "Undergraduate Student 1"
+    title: "Undergraduate Researcher"
+    department: "Department of Chemistry"
+    image: "3.jpg"
+    bio: "Contributing to software development for chemical applications."
+    linkedin: ""
+    github: ""
+
+alumni:
+  - name: "Former Student 1"
+    title: "PhD Graduate (2023)"
+    current_position: "Postdoctoral Researcher at University X"
+    image: "4.jpg"
+    linkedin: ""
+    github: ""

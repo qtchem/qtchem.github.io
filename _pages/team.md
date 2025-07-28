@@ -7,41 +7,133 @@ nav: true
 nav_order: 3
 ---
 
-## Principal Investigator
+<link rel="stylesheet" href="{{ '/assets/css/team.css' | relative_url }}">
 
-### Dr. Farnaz Heidar-Zadeh
-**Assistant Professor, Department of Chemistry**  
-**Queen's University**
+<div class="team-section">
+  <h2>Principal Investigator</h2>
+  <div class="team-grid">
+    {% for member in site.data.team_members.principal_investigator %}
+    <div class="team-member pi-member">
+      <img src="{{ '/assets/img/' | append: member.image | relative_url }}" alt="{{ member.name }}" class="team-photo">
+      <div class="team-name">{{ member.name }}</div>
+      <div class="team-title">{{ member.title }}</div>
+      <div class="team-department">{{ member.department }}</div>
+      <div class="team-bio">{{ member.bio }}</div>
+      <div class="team-links">
+        {% if member.website %}
+        <a href="{{ member.website }}" class="team-link website" target="_blank" title="Website">
+          <i class="fas fa-globe"></i>
+        </a>
+        {% endif %}
+        {% if member.linkedin %}
+        <a href="{{ member.linkedin }}" class="team-link linkedin" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        {% endif %}
+        {% if member.github %}
+        <a href="{{ member.github }}" class="team-link github" target="_blank" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        {% endif %}
+        {% if member.email %}
+        <a href="mailto:{{ member.email }}" class="team-link email" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
 
-Dr. Heidar-Zadeh leads our theoretical and computational chemistry research group. She is a recipient of the prestigious **2021 Polanyi Prize in Chemistry** from the Council of Ontario Universities, recognizing her outstanding contributions to advancing new methods and software that improve efficiency in molecular design.
+<div class="team-section">
+  <h2>Graduate Students</h2>
+  <div class="team-grid">
+    {% for member in site.data.team_members.graduate_students %}
+    <div class="team-member">
+      <img src="{{ '/assets/img/' | append: member.image | relative_url }}" alt="{{ member.name }}" class="team-photo">
+      <div class="team-name">{{ member.name }}</div>
+      <div class="team-title">{{ member.title }}</div>
+      <div class="team-department">{{ member.department }}</div>
+      <div class="team-bio">{{ member.bio }}</div>
+      <div class="team-links">
+        {% if member.linkedin and member.linkedin != "" %}
+        <a href="{{ member.linkedin }}" class="team-link linkedin" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        {% endif %}
+        {% if member.github and member.github != "" %}
+        <a href="{{ member.github }}" class="team-link github" target="_blank" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
 
-**Research Expertise:**
-- Theoretical and computational chemistry
-- Quantum chemistry and machine learning
-- Mathematical tools for chemical concepts
-- Software development (ChemTools lead developer)
+<div class="team-section">
+  <h2>Undergraduate Students</h2>
+  <div class="team-grid">
+    {% for member in site.data.team_members.undergraduate_students %}
+    <div class="team-member">
+      <img src="{{ '/assets/img/' | append: member.image | relative_url }}" alt="{{ member.name }}" class="team-photo">
+      <div class="team-name">{{ member.name }}</div>
+      <div class="team-title">{{ member.title }}</div>
+      <div class="team-department">{{ member.department }}</div>
+      <div class="team-bio">{{ member.bio }}</div>
+      <div class="team-links">
+        {% if member.linkedin and member.linkedin != "" %}
+        <a href="{{ member.linkedin }}" class="team-link linkedin" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        {% endif %}
+        {% if member.github and member.github != "" %}
+        <a href="{{ member.github }}" class="team-link github" target="_blank" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
 
-**Education & Background:**
-- Assistant Professor at Queen's University (2019-present)
-- Published 30+ peer-reviewed articles
-- Lead developer of the open-source ChemTools software package
+<div class="team-section">
+  <h2>Alumni</h2>
+  <div class="team-grid">
+    {% for member in site.data.team_members.alumni %}
+    <div class="team-member">
+      <img src="{{ '/assets/img/' | append: member.image | relative_url }}" alt="{{ member.name }}" class="team-photo">
+      <div class="team-name">{{ member.name }}</div>
+      <div class="team-title">{{ member.title }}</div>
+      <div class="team-department">{{ member.current_position }}</div>
+      <div class="team-links">
+        {% if member.linkedin and member.linkedin != "" %}
+        <a href="{{ member.linkedin }}" class="team-link linkedin" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        {% endif %}
+        {% if member.github and member.github != "" %}
+        <a href="{{ member.github }}" class="team-link github" target="_blank" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
 
-## Current Group Members
-
-Our research group consists of dedicated graduate students and undergraduate researchers working on various aspects of theoretical and computational chemistry, from machine learning applications to quantum chemical method development.
-
-## Research Opportunities
-
-We welcome motivated students at all levels who are interested in:
-- Computational chemistry and quantum mechanics
-- Machine learning applications in chemistry
-- Software development for scientific applications
-- Mathematical modeling of chemical phenomena
-
-## Alumni
-
-Our group members have gone on to successful careers in academia, industry, and research institutions, contributing to the advancement of computational chemistry and related fields.
-
----
-
-*Interested in joining our team? Please see the Contact page for information on available positions and how to apply.*
+<div class="team-section">
+  <h2>Research Opportunities</h2>
+  <p>We welcome motivated students at all levels who are interested in:</p>
+  <ul>
+    <li>Computational chemistry and quantum mechanics</li>
+    <li>Machine learning applications in chemistry</li>
+    <li>Software development for scientific applications</li>
+    <li>Mathematical modeling of chemical phenomena</li>
+  </ul>
+  <p><em>Interested in joining our team? Please see the <a href="{{ '/contact/' | relative_url }}">Contact</a> page for information on available positions and how to apply.</em></p>
+</div>
