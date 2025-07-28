@@ -102,4 +102,9 @@ jobs:
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
+          # target branch for GitHub Pages deployment
+          branch: gh-pages
+          # directory containing the built site
           folder: _site
+          # remove existing files before deploy
+          clean: true
