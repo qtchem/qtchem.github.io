@@ -13,15 +13,14 @@ principal_investigator:
     email: "farnaz.heidarzadeh@queensu.ca"
 
 graduate_students:
-  - name: "Graduate Student 1"
-    title: "PhD Student"
-    department: "Department of Chemistry"
-    image: "1.jpg"
-    bio: "Research focus on quantum chemistry and machine learning applications."
-    linkedin: "https://www.linkedin.com/in/farnaz-heidar-zadeh-248bb1126/"
-    github: "https://github.com/FarnazH"
-    website: "https://www.chem.queensu.ca/heidar-zadeh-farnaz"
-    email: "farnaz.heidarzadeh@queensu.ca"
+  - name: "Fanwang Meng"
+    title: "Banting Postdoctoral Fellow"
+    department: "Department of Chemistry, Queen's University, Canada"
+    image: "Fanwang_photo.jpg"
+    bio: "Research focus on computational drug discovery and open-source software development"
+    linkedin: "https://www.linkedin.com/in/fanwang-m-3687a6a2/"
+    website: "https://scholar.google.ca/citations?user=5Xk8ab8AAAAJ&hl=en"
+    email: "fanwang.meng@queensu.ca"
 
   - name: "Graduate Student 2"
     title: "MSc Student"
