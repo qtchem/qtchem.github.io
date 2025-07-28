@@ -80,15 +80,15 @@ jobs:
           cp vendor/al-folio/assets/fonts/academicons.* assets/fonts/
           cp vendor/al-folio/assets/css/academicons.min.css assets/css/
 
-      # 3. Ensure fonts & CSS are included as a proper YAML array
-      - name: Ensure Jekyll include is a YAML array
-        run: |
-          if grep -q '^include:' _config.yml; then
-            echo "Updating existing include section"
-            sed -i '/^include:/a\  - assets/fonts\n  - assets/css' _config.yml
-          else
-            echo -e "\ninclude:\n  - assets/fonts\n  - assets/css" >> _config.yml
-          fi
+      # # 3. Ensure fonts & CSS are included as a proper YAML array
+      # - name: Ensure Jekyll include is a YAML array
+      #   run: |
+      #     if grep -q '^include:' _config.yml; then
+      #       echo "Updating existing include section"
+      #       sed -i '/^include:/a\  - assets/fonts\n  - assets/css' _config.yml
+      #     else
+      #       echo -e "\ninclude:\n  - assets/fonts\n  - assets/css" >> _config.yml
+      #     fi
 
       # 4. Setup Ruby
       - name: Setup Ruby 💎
