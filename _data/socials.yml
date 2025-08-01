@@ -10,11 +10,11 @@
 email: farnaz.heidarzadeh@queensu.ca # Prof. Farnaz Heidar-Zadeh's email
 # facebook_id: # your facebook id
 # flickr_id: # your flickr id
-# github_username: # your GitHub user name
+github_username: theochem # your GitHub user name
 # gitlab_username: # your GitLab user name
 # hal_id: # your HAL id (https://hal.science/)
 # ieee_id: # your ieeexplore.ieee.org/author/id
-inspirehep_id: 1010907 # Inspire HEP author ID
+# inspirehep_id: 1010907 # Inspire HEP author ID
 # instagram_id: # your instagram id
 # kaggle_id: # your kaggle id
 # keybase_username: # your keybase user name
@@ -48,6 +48,6 @@ scholar_userid: JlIWcccAAAAJ # Prof. Farnaz Heidar-Zadeh's Google Scholar ID
 # youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 # zotero_username: # your zotero username
 custom_social: # can be any name here other than the ones already defined above
-  logo: https://www.alberteinstein.com/wp-content/uploads/2024/03/cropped-favicon-192x192.png # can be png, svg, jpg
-  title: Custom Social
-  url: https://www.alberteinstein.com/
+  logo: assets/img/web_logo_white.png # can be png, svg, jpg
+  title: qc-devs
+  url: https://qcdevs.org/
