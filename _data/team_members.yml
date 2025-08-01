@@ -58,6 +58,27 @@ graduate_students:
     scholar: "https://scholar.google.com/citations?user=UT9jGUUAAAAJ&hl"
     email: "18mpvz@queensu.ca"
 
+  - name: "Olivia Saur"
+    title: "Undergraduate Researcher"
+    department: "Department of Chemistry, Queen's University, Canada"
+    image: "6.jpg"
+    bio: "TBD"
+    linkedin: "https://www.linkedin.com/in/TBD"
+    github: "https://github.com/TBD"
+    website: "https://www.linkedin.com/in/TBD"
+    email: "olivia.saur@queensu.ca"
+
+  - name: "Nicole Wu"
+    title: "Undergraduate Researcher"
+    department: "Department of Chemistry, Queen's University, Canada"
+    image: "6.jpg"
+    bio: "TBD"
+    linkedin: "https://www.linkedin.com/in/TBD"
+    github: "https://github.com/TBD"
+    website: "https://www.linkedin.com/in/TBD"
+    email: "wu.nicole@queensu.ca"
+
+
 # undergraduate_students:
 #   - name: "Undergraduate Student 1"
 #     title: "Undergraduate Researcher"
