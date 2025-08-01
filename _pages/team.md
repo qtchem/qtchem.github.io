@@ -35,6 +35,11 @@ nav_order: 3
           <i class="fab fa-github"></i>
         </a>
         {% endif %}
+        {% if member.scholar %}
+        <a href="{{ member.scholar }}" class="team-link scholar" target="_blank" title="Google Scholar">
+          <i class="ai ai-google-scholar"></i>
+        </a>
+        {% endif %}
         {% if member.email %}
         <a href="mailto:{{ member.email }}" class="team-link email" title="Email">
           <i class="fas fa-envelope"></i>
@@ -70,6 +75,11 @@ nav_order: 3
         {% if member.github and member.github != "" %}
         <a href="{{ member.github }}" class="team-link github" target="_blank" title="GitHub">
           <i class="fab fa-github"></i>
+        </a>
+        {% endif %}
+        {% if member.scholar and member.scholar != "" %}
+        <a href="{{ member.scholar }}" class="team-link scholar" target="_blank" title="Google Scholar">
+          <i class="ai ai-google-scholar"></i>
         </a>
         {% endif %}
         {% if member.email and member.email != "" %}
@@ -110,6 +120,11 @@ nav_order: 3
         {% if member.github and member.github != "" %}
         <a href="{{ member.github }}" class="team-link github" target="_blank" title="GitHub">
           <i class="fab fa-github"></i>
+        </a>
+        {% endif %}
+        {% if member.scholar and member.scholar != "" %}
+        <a href="{{ member.scholar }}" class="team-link scholar" target="_blank" title="Google Scholar">
+          <i class="ai ai-google-scholar"></i>
         </a>
         {% endif %}
         {% if member.email and member.email != "" %}
