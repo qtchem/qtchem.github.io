@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://qtchem.github.io/sitemap.xml
