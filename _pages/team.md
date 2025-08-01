@@ -35,6 +35,11 @@ nav_order: 3
           <i class="fab fa-github"></i>
         </a>
         {% endif %}
+        {% if member.scholar %}
+        <a href="{{ member.scholar }}" class="team-link scholar" target="_blank" title="Google Scholar">
+          <i class="ai ai-google-scholar"></i>
+        </a>
+        {% endif %}
         {% if member.email %}
         <a href="mailto:{{ member.email }}" class="team-link email" title="Email">
           <i class="fas fa-envelope"></i>
@@ -70,6 +75,11 @@ nav_order: 3
         {% if member.github and member.github != "" %}
         <a href="{{ member.github }}" class="team-link github" target="_blank" title="GitHub">
           <i class="fab fa-github"></i>
+        </a>
+        {% endif %}
+        {% if member.scholar and member.scholar != "" %}
+        <a href="{{ member.scholar }}" class="team-link scholar" target="_blank" title="Google Scholar">
+          <i class="ai ai-google-scholar"></i>
         </a>
         {% endif %}
         {% if member.email and member.email != "" %}
@@ -112,6 +122,11 @@ nav_order: 3
           <i class="fab fa-github"></i>
         </a>
         {% endif %}
+        {% if member.scholar and member.scholar != "" %}
+        <a href="{{ member.scholar }}" class="team-link scholar" target="_blank" title="Google Scholar">
+          <i class="ai ai-google-scholar"></i>
+        </a>
+        {% endif %}
         {% if member.email and member.email != "" %}
         <a href="mailto:{{ member.email }}" class="team-link email" title="Email">
           <i class="fas fa-envelope"></i>
@@ -126,15 +141,120 @@ nav_order: 3
 
 <div class="team-section">
   <h2>Alumni</h2>
-  <ul class="alumni-list">
-    {% for member in site.data.team_members.alumni %}
-    <li class="alumni-item">
-      {% if member.linkedin and member.linkedin != "" %}
-        <a href="{{ member.linkedin }}" target="_blank">{{ member.name }} – {{ member.title }}</a>
-      {% else %}
-        {{ member.name }} – {{ member.title }}
-      {% endif %}
-    </li>
-    {% endfor %}
-  </ul>
+
+  <!-- Postdocs -->
+  {% assign postdocs_count = site.data.team_members.alumni.postdocs | size %}
+  {% if postdocs_count > 0 %}
+  <div class="alumni-group">
+    <h3 class="alumni-group-header" onclick="toggleAlumniGroup('postdocs')">
+      <i class="fas fa-chevron-down" id="postdocs-icon"></i>
+      Postdocs ({{ postdocs_count }})
+    </h3>
+    <ul class="alumni-list" id="postdocs-list">
+      {% for member in site.data.team_members.alumni.postdocs %}
+      <li class="alumni-item">
+        {% if member.linkedin and member.linkedin != "" %}
+          <a href="{{ member.linkedin }}" target="_blank">{{ member.name }} – {{ member.title }}</a>
+        {% else %}
+          {{ member.name }} – {{ member.title }}
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  <!-- Graduates -->
+  {% assign graduates_count = site.data.team_members.alumni.graduates | size %}
+  {% if graduates_count > 0 %}
+  <div class="alumni-group">
+    <h3 class="alumni-group-header" onclick="toggleAlumniGroup('graduates')">
+      <i class="fas fa-chevron-down" id="graduates-icon"></i>
+      Graduates ({{ graduates_count }})
+    </h3>
+    <ul class="alumni-list" id="graduates-list">
+      {% for member in site.data.team_members.alumni.graduates %}
+      <li class="alumni-item">
+        {% if member.linkedin and member.linkedin != "" %}
+          <a href="{{ member.linkedin }}" target="_blank">{{ member.name }} – {{ member.title }}</a>
+        {% else %}
+          {{ member.name }} – {{ member.title }}
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  <!-- Undergraduates -->
+  {% assign undergraduates_count = site.data.team_members.alumni.undergraduates | size %}
+  {% if undergraduates_count > 0 %}
+  <div class="alumni-group">
+    <h3 class="alumni-group-header" onclick="toggleAlumniGroup('undergraduates')">
+      <i class="fas fa-chevron-down" id="undergraduates-icon"></i>
+      Undergraduates ({{ undergraduates_count }})
+    </h3>
+    <ul class="alumni-list" id="undergraduates-list">
+      {% for member in site.data.team_members.alumni.undergraduates %}
+      <li class="alumni-item">
+        {% if member.linkedin and member.linkedin != "" %}
+          <a href="{{ member.linkedin }}" target="_blank">{{ member.name }} – {{ member.title }}</a>
+        {% else %}
+          {{ member.name }} – {{ member.title }}
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  <!-- Research Interns -->
+  {% assign interns_count = site.data.team_members.alumni.research_interns | size %}
+  {% if interns_count > 0 %}
+  <div class="alumni-group">
+    <h3 class="alumni-group-header" onclick="toggleAlumniGroup('research_interns')">
+      <i class="fas fa-chevron-down" id="research_interns-icon"></i>
+      Research Interns ({{ interns_count }})
+    </h3>
+    <ul class="alumni-list" id="research_interns-list">
+      {% for member in site.data.team_members.alumni.research_interns %}
+      <li class="alumni-item">
+        {% if member.linkedin and member.linkedin != "" %}
+          <a href="{{ member.linkedin }}" target="_blank">{{ member.name }} – {{ member.title }}</a>
+        {% else %}
+          {{ member.name }} – {{ member.title }}
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
 </div>
+
+<script>
+function toggleAlumniGroup(groupId) {
+  const list = document.getElementById(groupId + '-list');
+  const icon = document.getElementById(groupId + '-icon');
+
+  if (list.style.display === 'none') {
+    list.style.display = 'block';
+    icon.className = 'fas fa-chevron-down';
+  } else {
+    list.style.display = 'none';
+    icon.className = 'fas fa-chevron-right';
+  }
+}
+
+// Initialize all groups as collapsed
+document.addEventListener('DOMContentLoaded', function() {
+  const groups = ['postdocs', 'graduates', 'undergraduates', 'research_interns'];
+  groups.forEach(groupId => {
+    const list = document.getElementById(groupId + '-list');
+    const icon = document.getElementById(groupId + '-icon');
+    if (list && icon) {
+      list.style.display = 'none';
+      icon.className = 'fas fa-chevron-right';
+    }
+  });
+});
+</script>

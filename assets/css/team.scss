@@ -148,6 +148,66 @@
   font-size: 1.2rem;
 }
 
+/* Alumni Groups */
+.alumni-group {
+  /* No extra spacing between different alumni groups */
+  margin-bottom: 0.1rem;
+}
+
+.alumni-group-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 0.75rem 1rem;
+  background: var(--global-bg-color);
+  border: 1px solid var(--global-border-color);
+  border-radius: 8px;
+  margin-bottom: 0.05rem;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  font-weight: normal;
+  color: var(--global-text-color);
+}
+
+.alumni-group-header:hover {
+  background: var(--global-hover-color);
+  border-color: var(--global-theme-color);
+}
+
+.alumni-group-header i {
+  transition: transform 0.3s ease;
+  color: var(--global-theme-color);
+}
+
+.alumni-list {
+  list-style: none;
+  padding-left: 2rem;
+  margin: 0;
+  border-left: 2px solid var(--global-border-color);
+  margin-left: 1rem;
+}
+
+.alumni-item {
+  padding: 0;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.alumni-item:hover {
+  border-bottom-color: var(--global-theme-color);
+}
+
+.alumni-item a {
+  color: var(--global-text-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.alumni-item a:hover {
+  color: var(--global-theme-color);
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .team-grid {
@@ -163,5 +223,15 @@
   .pi-member .team-photo {
     width: 150px;
     height: 150px;
+  }
+
+  .alumni-group-header {
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .alumni-list {
+    padding-left: 1.5rem;
+    margin-left: 0.5rem;
   }
 }
