@@ -70,34 +70,41 @@ graduate_students:
 #     email: "farnaz.heidarzadeh@queensu.ca"
 
 alumni:
-  # - name: "Alireza Tehrani"
-  #   title: "PhD Student (2020-2025)"
-  #   department: "Department of Chemistry, Queen's University, Canada"
-  #   linkedin: "https://www.linkedin.com/in/ali-t-m95"
+  postdocs:
+    - name: "Michelle Richer"
+      title: "Postdoctoral Fellow"
+      department: "Department of Chemistry, Queen's University, Canada"
+      linkedin: "https://www.linkedin.com/in/michelle-richer/"
 
-  # - name: "Maximilian van Zyl "
-  #   title: "Master Student (2022-2025)"
-  #   department: "Department of Chemistry, Queen's University, Canada"
-  #   linkedin: "https://www.linkedin.com/in/maximilian-van-zyl-901a051a3/"
+  graduates:
+    # - name: "Alireza Tehrani"
+    #   title: "PhD Student (2020-2025)"
+    #   department: "Department of Chemistry, Queen's University, Canada"
+    #   linkedin: "https://www.linkedin.com/in/ali-t-m95"
+    #   scholar: "https://scholar.google.ca/citations?user=TTJ2j3MAAAAJ&hl=en"
 
-  - name: "Michelle Richer"
-    title: "Postdoctoral Fellow"
-    department: "Department of Chemistry, Queen's University, Canada"
+    # - name: "Maximilian van Zyl"
+    #   title: "Master Student (2022-2025)"
+    #   department: "Department of Chemistry, Queen's University, Canada"
+    #   linkedin: "https://www.linkedin.com/in/maximilian-van-zyl-901a051a3/"
+    #   scholar: "https://scholar.google.com/citations?user=UT9jGUUAAAAJ&hl=en"
 
-  - name: "Abigail Weber Broscius"
-    title: "MITACS Globalink Intern (2023)"
-    department: "Department of Chemistry, Queen's University, Canada"
-    linkedin: "https://www.linkedin.com/in/awbroscius1/"
+  undergraduates:
+    - name: "Sydney McLennan"
+      title: "Undergraduate Student"
+      department: "Department of Chemistry, Queen's University, Canada"
+      linkedin: "https://www.linkedin.com/in/sydney-mclennan/"
 
-  - name: "Camilo Monsalve Maya"
-    title: "MITACS Globalink Intern (2024)"
-    department: "Department of Chemistry, Queen's University, Canada"
+  research_interns:
+    - name: "Abigail Weber Broscius"
+      title: "MITACS Globalink Intern (2023)"
+      department: "Department of Chemistry, Queen's University, Canada"
+      linkedin: "https://www.linkedin.com/in/awbroscius1/"
 
-  - name: "Carlos Castillo"
-    title: "ELAP Scholar (2022-2023)"
-    department: "Department of Chemistry, Queen's University, Canada"
+    - name: "Camilo Monsalve Maya"
+      title: "MITACS Globalink Intern (2024)"
+      department: "Department of Chemistry, Queen's University, Canada"
 
-  - name: "Sydney McLennan"
-    title: "Undergraduate Student"
-    department: "Department of Chemistry, Queen's University, Canada"
-    linkedin: "https://www.linkedin.com/in/sydney-mclennan/"
+    - name: "Carlos Castillo"
+      title: "ELAP Scholar (2022-2023)"
+      department: "Department of Chemistry, Queen's University, Canada"
