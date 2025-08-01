@@ -143,8 +143,10 @@ nav_order: 3
   <h2>Alumni</h2>
 
   <!-- Postdocs -->
-  {% assign postdocs_count = site.data.team_members.alumni.postdocs | size %}
-  {% if postdocs_count > 0 %}
+
+{% assign postdocs_count = site.data.team_members.alumni.postdocs | size %}
+{% if postdocs_count > 0 %}
+
   <div class="alumni-group">
     <h3 class="alumni-group-header" onclick="toggleAlumniGroup('postdocs')">
       <i class="fas fa-chevron-down" id="postdocs-icon"></i>
@@ -165,8 +167,10 @@ nav_order: 3
   {% endif %}
 
   <!-- Graduates -->
-  {% assign graduates_count = site.data.team_members.alumni.graduates | size %}
-  {% if graduates_count > 0 %}
+
+{% assign graduates_count = site.data.team_members.alumni.graduates | size %}
+{% if graduates_count > 0 %}
+
   <div class="alumni-group">
     <h3 class="alumni-group-header" onclick="toggleAlumniGroup('graduates')">
       <i class="fas fa-chevron-down" id="graduates-icon"></i>
@@ -187,8 +191,10 @@ nav_order: 3
   {% endif %}
 
   <!-- Undergraduates -->
-  {% assign undergraduates_count = site.data.team_members.alumni.undergraduates | size %}
-  {% if undergraduates_count > 0 %}
+
+{% assign undergraduates_count = site.data.team_members.alumni.undergraduates | size %}
+{% if undergraduates_count > 0 %}
+
   <div class="alumni-group">
     <h3 class="alumni-group-header" onclick="toggleAlumniGroup('undergraduates')">
       <i class="fas fa-chevron-down" id="undergraduates-icon"></i>
@@ -209,8 +215,10 @@ nav_order: 3
   {% endif %}
 
   <!-- Research Interns -->
-  {% assign interns_count = site.data.team_members.alumni.research_interns | size %}
-  {% if interns_count > 0 %}
+
+{% assign interns_count = site.data.team_members.alumni.research_interns | size %}
+{% if interns_count > 0 %}
+
   <div class="alumni-group">
     <h3 class="alumni-group-header" onclick="toggleAlumniGroup('research_interns')">
       <i class="fas fa-chevron-down" id="research_interns-icon"></i>
